@@ -1,5 +1,5 @@
 <script setup lang="ts">
-await navigateTo('/sample');
+await navigateTo('/pokedex');
 </script>
 <template>
   <p>Redirecting...</p>
