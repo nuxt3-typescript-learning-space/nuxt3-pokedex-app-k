@@ -1,1 +1,13 @@
-["getCount", "getCount2", "getCount3", "getCount4", "getCount5", "getCount6"]
+[
+  "getHeight",
+  "getWeight",
+  "getImage",
+  "getPokemonName",
+  "getGenera",
+  "getFlavorText",
+  "getCries",
+  "getEnglishPokemonNames",
+  "getJapanesePokemonNames",
+  "getPokemonImageUrls",
+  "getPokemonAllCount"
+]
