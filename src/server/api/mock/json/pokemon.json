@@ -1,0 +1,25 @@
+{
+  "detailData": {
+    "height": 100,
+    "weight": 200,
+    "cries": {
+      "latest": "latestCry.mp3",
+      "legacy": "legacyCry.mp3"
+    },
+    "sprites": {
+      "other": {
+        "official-artwork": {
+          "front_default": "imageUrl.png"
+        }
+      },
+      "front_default": "fallbackImageUrl.png"
+    }
+  },
+  "speciesData": {
+    "names": [{ "language": { "name": "ja" }, "name": "ピカチュウ" }],
+    "genera": [{ "language": { "name": "ja" }, "genus": "ねずみポケモン" }],
+    "flavor_text_entries": [
+      { "language": { "name": "ja" }, "flavor_text": "いつも ほっぺたに でんきを ためこんでいる。" }
+    ]
+  }
+}
