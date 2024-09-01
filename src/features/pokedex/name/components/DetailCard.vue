@@ -22,23 +22,28 @@ const handleClickAudioButton = () => {
 <template>
   <Card>
     <CardHeader class="flex flex-row justify-center">
-      <CardTitle class="text-center text-3xl">{{ name }}</CardTitle>
-      <Button :disabled="!cries" class="ml-4 bg-green-400 hover:bg-green-300" @click="handleClickAudioButton">
+      <CardTitle class="text-center text-3xl" data-testid="card-title">{{ name }}</CardTitle>
+      <Button
+        :disabled="!cries"
+        class="ml-4 bg-green-400 hover:bg-green-300"
+        data-testid="audio-button"
+        @click="handleClickAudioButton"
+      >
         <img src="@/assets/image/speaker-icon.svg" alt="鳴き声再生ボタン" />
       </Button>
     </CardHeader>
     <CardContent class="flex items-center justify-center gap-8">
       <div class="flex w-2/5 justify-center">
-        <PokemonImage :src="image" :alt="`${name}の画像`" />
+        <PokemonImage :src="image" :alt="`${name}の画像`" data-testid="image" />
       </div>
       <ul class="flex w-2/5 flex-col text-3xl">
         <template v-if="genera">
-          <li class="mb-8">{{ genera }}</li>
+          <li class="mb-8" data-testid="genera">{{ genera }}</li>
         </template>
-        <li>高さ: {{ height }} m</li>
-        <li>重さ: {{ weight }} kg</li>
+        <li data-testid="height">高さ: {{ height }} m</li>
+        <li data-testid="weight">重さ: {{ weight }} kg</li>
         <template v-if="flavorText">
-          <li class="mt-8">{{ flavorText }}</li>
+          <li class="mt-8" data-testid="flavor-text">{{ flavorText }}</li>
         </template>
       </ul>
     </CardContent>
